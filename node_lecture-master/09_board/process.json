@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "board",
+      "script": "node",
+      "args": "index.js",
+      "instances": 1,
+      "watch": true,
+      "exec_mode": "cluster",
+      "env": {
+        "DB_HOST": "...",
+        "DB_PORT": 3306,
+        "DB_USER": "root",
+        "DB_PASSWORD": "...",
+        "DB_DATABASE": "board",
+        "SESSION_SECRET": "..."
+      }
+    }
+  ]
+}
